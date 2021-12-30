@@ -8,7 +8,9 @@ namespace ProjectBackend.Models
     public class SocialMedia
     {
         public int SocialMediaId { get; set; }
-        public string Name { get; set; }
+        public string FacebookLink { get; set; }
+        public string PinterestLink { get; set; }
+        public string VContactLink { get; set; }
         public int TeacherDetailId { get; set; }
         public TeacherDetail TeacherDetail { get; set; }
     }
