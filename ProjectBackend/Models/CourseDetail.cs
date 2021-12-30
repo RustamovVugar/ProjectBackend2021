@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -21,8 +22,8 @@ namespace ProjectBackend.Models
         public int CourseId { get; set; }
         public virtual Course Course { get; set; }
         [ForeignKey("CourseFeature")]
-        public int CourseFeature { get; set; }
-        public virtual CourseFeaturen CourseFeature { get; set; }
+        public int CourseFeatureId { get; set; }
+        public virtual CourseFeature CourseFeature { get; set; }
         public ICollection<CoursesCategory> CoursesCategories{ get; set; }
 
 
