@@ -5,6 +5,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Newtonsoft.Json;
 using ProjectBackend.DataAccessLayer;
 using System;
 using System.Collections.Generic;
@@ -28,7 +29,7 @@ namespace ProjectBackend
             {
                 options.UseSqlServer(Configuration.GetConnectionString("Default"));
             });
-            services.AddControllersWithViews();
+            services.AddControllersWithViews().AddNewtonsoftJson(x=>x.SerializerSettings.ReferenceLoopHandling=ReferenceLoopHandling.Ignore);
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
