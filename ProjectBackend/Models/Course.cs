@@ -8,7 +8,6 @@ namespace ProjectBackend.Models
     public class Course
     {
         public int CourseId { get; set; }
-        public string Title { get; set; }
         public string Name { get; set; }
         public string Image { get; set; }
         public int CourseDetailId { get; set; }

@@ -5,12 +5,13 @@ using System.Threading.Tasks;
 
 namespace ProjectBackend.Models
 {
-    public class BlogsCategory
+    public class BlogsPost
     {
-        public int BlogsCategoryId { get; set; }
+        public int BlogsPostId { get; set; }
         public int BlogDetailId { get; set; }
         public BlogDetail BlogDetail { get; set; }
-        public int CategoryId { get; set; }
-        public Category Category { get; set; }
+        public int PostId { get; set; }
+        public Post Post { get; set; }
     }
+
 }

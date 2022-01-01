@@ -9,7 +9,6 @@ namespace ProjectBackend.Models
     public class CourseDetail
     {
         public int CourseDetailId { get; set; }
-        public string Title { get; set; }
         public string Name { get; set; }
         public string About { get; set; }
         public string Type1 { get; set; }
@@ -25,6 +24,7 @@ namespace ProjectBackend.Models
         public int CourseFeatureId { get; set; }
         public virtual CourseFeature CourseFeature { get; set; }
         public ICollection<CoursesCategory> CoursesCategories{ get; set; }
+        public ICollection<CoursesPost> CoursesPosts{ get; set; }
 
 
     }

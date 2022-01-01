@@ -5,9 +5,9 @@ using System.Threading.Tasks;
 
 namespace ProjectBackend.Models
 {
-    public class TeacherSkill
+    public class TeachersSkill
     {
-        public int TeacherSkillId { get; set; }
+        public int TeachersSkillId { get; set; }
         public int TeacherDetailId { get; set; }
         public TeacherDetail TeacherDetail { get; set; }
         public int SkillId { get; set; }

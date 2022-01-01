@@ -10,6 +10,6 @@ namespace ProjectBackend.Models
         public int SkillId { get; set; }
         public string Name { get; set; }
         public string Percent { get; set; }
-        public ICollection<TeacherSkill> TeacherSkills{ get; set; }
+        public ICollection<TeachersSkill> TeacherSkills{ get; set; }
     }
 }

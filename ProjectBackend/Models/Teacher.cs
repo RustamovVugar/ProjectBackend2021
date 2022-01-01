@@ -8,7 +8,6 @@ namespace ProjectBackend.Models
     public class Teacher
     {
         public int TeacherId { get; set; }
-        public string Title { get; set; }
         public string FullName { get; set; }
         public string Profession { get; set; }
         public string Photo { get; set; }

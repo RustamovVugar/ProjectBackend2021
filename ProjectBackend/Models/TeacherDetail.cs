@@ -9,7 +9,6 @@ namespace ProjectBackend.Models
     public class TeacherDetail
     {
         public int TeacherDetailId { get; set; }
-        public string Title { get; set; }
         public string Degree { get; set; }
         public string Experience { get; set; }
         public string Hobbies { get; set; }
@@ -25,9 +24,10 @@ namespace ProjectBackend.Models
         public virtual Teacher Teacher { get; set; }
         public int SkillId { get; set; }
         public virtual Skill Skill { get; set; }
+        [ForeignKey("SocialMedia")]
         public int SocialMediId { get; set; }
         public virtual SocialMedia SocialMedia { get; set; }
-        public int TeacherSkillId { get; set; }
+        public int TeachersSkillId { get; set; }
         
     }
 }

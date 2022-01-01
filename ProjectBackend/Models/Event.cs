@@ -8,7 +8,6 @@ namespace ProjectBackend.Models
     public class Event
     {
         public int EventId { get; set; }
-        public string Title { get; set; }
         public string Image { get; set; }
         public string Date { get; set; }
         public string Name { get; set; }
